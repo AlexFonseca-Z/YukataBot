@@ -36,4 +36,5 @@ client.on('interactionCreate',  (interaction) => {
         interaction.reply('Bai!');
     }
 })
+
 client.login(process.env.TOKEN);
