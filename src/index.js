@@ -3,6 +3,9 @@ require('dotenv').config();
 const {Client, Events, GatewayIntentBits, EmbedBuilder, SlashCommandBuilder, PermissionsBitField, Permissions} = require('discord.js');
 const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
 
+//THIS IS OUTDATED AS I DECIDED TO MAKE THINGS IN A MORE ORGANIZED WAY!! 
+//HEAD TO MY GITHUB TO CHECK THE NEW VERSION
+
 client.on(Events.ClientReady, (x) => {
     console.log(`${x.user.tag} is ready!`);
     client.user.setActivity(`I'm in danger`);
